@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-redux-hmr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Vite plugin which enables HMR for Redux when possible",
   "author": "Iskren Slavov <iskren.s@gmail.com>",
   "license": "MIT",
