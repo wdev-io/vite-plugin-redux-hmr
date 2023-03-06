@@ -1,0 +1,62 @@
+{
+  "name": "vite-plugin-redux-hmr",
+  "version": "1.0.0",
+  "description": "A Vite plugin which enables HMR for Redux when possible",
+  "author": "Iskren Slavov <iskren.s@gmail.com>",
+  "license": "MIT",
+  "main": "vite-plugin-redux-hmr.js",
+  "module": "vite-plugin-redux-hmr.mjs",
+  "typings": "vite-plugin-redux-hmr.d.ts",
+  "exports": {
+    ".": {
+      "types": "./vite-plugin-redux-hmr.d.ts",
+      "import": "./vite-plugin-redux-hmr.mjs",
+      "require": "./vite-plugin-redux-hmr.js"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "vite-plugin-redux-hmr.d.ts",
+    "vite-plugin-redux-hmr.js",
+    "vite-plugin-redux-hmr.mjs",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "clean": "rimraf ./vite-plugin-redux-hmr.js ./vite-plugin-redux-hmr.mjs ./vite-plugin-redux-hmr.d.ts",
+    "build:js": "tsc -p . --module commonjs",
+    "build:mjs": "tsc -p . --module es2022 && mve vite-plugin-redux-hmr.js vite-plugin-redux-hmr.mjs",
+    "build": "npm run build:mjs && npm run build:js",
+    "prepare": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "redux",
+    "hmr",
+    "reload"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdev-io/vite-plugin-redux-hmr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wdev-io/vite-plugin-redux-hmr/issues"
+  },
+  "homepage": "https://github.com/wdev-io/vite-plugin-redux-hmr/",
+  "devDependencies": {
+    "@types/node": "^18.14.6",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "eslint": "^8.35.0",
+    "mve": "^0.1.2",
+    "rimraf": "^4.3.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "magic-string": "^0.30.0"
+  },
+  "peerDependencies": {
+    "vite": "*"
+  }
+}

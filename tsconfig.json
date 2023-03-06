@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2021",
+    "moduleResolution": "node",
+    "outDir": ".",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "alwaysStrict": false,
+    "noImplicitUseStrict": true
+  },
+  "include": ["vite-plugin-redux-hmr.ts"],
+  "exclude": []
+}

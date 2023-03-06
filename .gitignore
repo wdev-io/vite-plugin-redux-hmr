@@ -1,0 +1,5 @@
+.DS_Store
+node_modules/
+vite-plugin-redux-hmr.js
+vite-plugin-redux-hmr.mjs
+vite-plugin-redux-hmr.d.ts
