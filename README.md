@@ -2,10 +2,10 @@
 
 ## 📗 Description
 Implements Hot Module Reloading (HMR) for your Redux library when in development.<br />
-**NOTE: HMR only works when there are no circular dependencies between your files, otherwise Vite will fallback to full reload.**
+**NOTE: HMR only works when there are no circular dependencies between your files, otherwise Vite will fallback to full reload. (you could use [dpdm](https://github.com/acrazing/dpdm) to detect those)**
 
 ## 🧪 Important
-1. In order for this plugin to work you need to have your reducers exported as a default export in a seprate reducers file.
+1. In order for this plugin to work you need to have your reducers exported as a default export in a separate reducers file.
 2. The reducers file needs to be imported in your main redux index file (the file that calls `configureStore()` or `createStore()` and defines your `store` variable).
 
 ## 🚀 Install
